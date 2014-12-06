@@ -11,30 +11,36 @@ var sableColor = "#000000";
 var vertColor = "#009900";
 
 //Button color controls
-$("#or").click( function() {
+$("#or").click(function() {
   $shield.css("background-color", orColor);
 });
 
-$("#argent").click( function() {
+$("#argent").click(function() {
   $shield.css("background-color", argentColor);
 });
 
-$("#azure").click( function() {
+$("#azure").click(function() {
   $shield.css("background-color", azureColor);
 });
 
-$("#gules").click( function() {
+$("#gules").click(function() {
   $shield.css("background-color", gulesColor);
 });
 
-$("#purpure").click( function() {
+$("#purpure").click(function() {
   $shield.css("background-color", purpureColor);
 });
 
-$("#sable").click( function() {
+$("#sable").click(function() {
   $shield.css("background-color", sableColor);
 });
 
-$("#vert").click( function() {
+$("#vert").click(function() {
   $shield.css("background-color", vertColor);
+});
+
+//Ordinary dropdown menu controls
+$(".dropdown-menu li a").click(function(event){
+  event.preventDefault();
+  $shield.html("<p>Test</p>");
 });
