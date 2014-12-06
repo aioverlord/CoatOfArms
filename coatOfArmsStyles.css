@@ -3,7 +3,6 @@
 #shield {
 	height: 500px;
 	width: 500px;
-	background-color: #CCC;
   border: 1px #000 solid;
   margin: 10px 0;
   border-radius: 0 0 50% 50%;
@@ -44,4 +43,39 @@
 
 #vert {
   background-image: linear-gradient(to bottom, #66FF33 0, #009900 100%);
+}
+
+/* Tincture Colors
+================================ */
+
+.defaultColor {
+  background-color:#CCCCCC;
+}
+
+.orColor {
+  background-color:#FFFF22;
+}
+
+.argentColor {
+  background-color:#FFFFFF;
+}
+
+.azureColor {
+  background-color:#0033CC;
+}
+
+.gulesColor {
+  background-color:#FF0000;
+}
+
+.purpureColor {
+  background-color:#CC3399;
+}
+
+.sableColor {
+  background-color:#000000;
+}
+
+.vertColor {
+  background-color:#009900;
 }

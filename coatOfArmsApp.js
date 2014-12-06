@@ -1,42 +1,39 @@
 //Cache the shield selector
 var $shield = $("#shield");
 
-//Declare the color values
-var orColor = "#FFFF22";
-var argentColor = "#FFFFFF";
-var azureColor = "#0033CC";
-var gulesColor = "#FF0000";
-var purpureColor = "#CC3399";
-var sableColor = "#000000";
-var vertColor = "#009900";
-
 //Button color controls
+
+function removeColor(jQueryObj) {
+  jQueryObj.removeClass("defaultColor").removeClass("orColor").removeClass("argentColor").removeClass("azureColor").removeClass("gulesColor").removeClass("purpureColor").removeClass("sableColor").removeClass("vertColor");
+  return jQueryObj;
+}
+
 $("#or").click(function() {
-  $shield.css("background-color", orColor);
+  removeColor($shield).addClass("orColor");
 });
 
 $("#argent").click(function() {
-  $shield.css("background-color", argentColor);
+  removeColor($shield).addClass("argentColor");
 });
 
 $("#azure").click(function() {
-  $shield.css("background-color", azureColor);
+  removeColor($shield).addClass("azureColor");
 });
 
 $("#gules").click(function() {
-  $shield.css("background-color", gulesColor);
+  removeColor($shield).addClass("gulesColor");
 });
 
 $("#purpure").click(function() {
-  $shield.css("background-color", purpureColor);
+  removeColor($shield).addClass("purpureColor");
 });
 
 $("#sable").click(function() {
-  $shield.css("background-color", sableColor);
+  removeColor($shield).addClass("sableColor");
 });
 
 $("#vert").click(function() {
-  $shield.css("background-color", vertColor);
+  removeColor($shield).addClass("vertColor");
 });
 
 //Ordinary dropdown menu controls
