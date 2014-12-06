@@ -6,6 +6,7 @@
 	background-color: #CCC;
   border: 1px #000 solid;
   margin: 10px 0;
+  border-radius: 0 0 50% 50%;
 }
 
 .btn-metal {
