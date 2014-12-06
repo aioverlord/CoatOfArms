@@ -5,3 +5,7 @@
 	width: 500px;
 	background-color: #CCC;
 }
+
+#or {
+  background-image: linear-gradient(to bottom, #FFFF99 0, #FFFF22 100%);
+}
