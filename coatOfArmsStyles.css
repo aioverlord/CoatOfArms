@@ -79,3 +79,61 @@
 .vertColor {
   background-color:#009900;
 }
+
+
+
+/* Chevron
+================================ */
+
+#chevron {
+  position: relative;
+  text-align: center;
+  padding: 12px;
+  margin-bottom: 6px;
+  height: 100px;
+  width: 500px;
+
+  margin-top: 150px;
+}
+
+#chevron:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 51%;
+  background: red;
+  -webkit-transform: skewY(25deg);
+  -moz-transform: skewY(25deg);
+  -ms-transform: skewY(25deg);
+  -o-transform: skewY(25deg);
+  transform: skewY(25deg);
+}
+#chevron:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 50%;
+  background: red;
+  -webkit-transform: skewY(-25deg);
+  -moz-transform: skewY(-25deg);
+  -ms-transform: skewY(-25deg);
+  -o-transform: skewY(-25deg);
+  transform: skewY(-25deg);
+}
+
+/* Parallelogram
+================================ */
+
+#parallelogram {
+  width: 150px;
+  height: 100px;
+  -webkit-transform: skewX(20deg);
+  -moz-transform: skewX(20deg);
+  -o-transform: skewX(20deg);
+  transform: skewX(20deg);
+  background: red;
+}

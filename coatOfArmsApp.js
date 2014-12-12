@@ -39,5 +39,5 @@ $("#vert").click(function() {
 //Ordinary dropdown menu controls
 $(".dropdown-menu li a").click(function(event){
   event.preventDefault();
-  $shield.html("<p>Test</p>");
+  $shield.html("<div id='parallelogram'></div>");
 });
