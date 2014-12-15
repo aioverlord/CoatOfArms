@@ -6,6 +6,7 @@
   border: 1px #000 solid;
   margin: 10px 0;
   border-radius: 0 0 50% 50%;
+  position: relative;
 }
 
 .btn-metal {
@@ -129,25 +130,65 @@
 ================================ */
 
 #bend-dexter {
-  width: 150px;
-  height: 500px;
+  width: 50px;
+  height: 100px;
   -webkit-transform: skewX(40deg);
   -moz-transform: skewX(40deg);
   -o-transform: skewX(40deg);
   transform: skewX(40deg);
   background: blue;
 
-  margin-left: 200px;
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  /*margin-left: 200px;*/
 }
 
 #bend-sinister {
-  width: 150px;
-  height: 500px;
+  width: 50px;
+  height: 100px;
   -webkit-transform: skewX(-40deg);
   -moz-transform: skewX(-40deg);
   -o-transform: skewX(-40deg);
   transform: skewX(-40deg);
   background: red;
 
-  margin-left: 140px;
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  /*margin-left: 140px;*/
+}
+
+#saltire1 {
+  width: 50px;
+  height: 100px;
+  -webkit-transform: skewX(40deg);
+  -moz-transform: skewX(40deg);
+  -o-transform: skewX(40deg);
+  transform: skewX(40deg);
+  background: aqua;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  /*margin-left: 200px;*/
+}
+
+#saltire2 {
+  width: 50px;
+  height: 100px;
+  -webkit-transform: skewX(-40deg);
+  -moz-transform: skewX(-40deg);
+  -o-transform: skewX(-40deg);
+  transform: skewX(-40deg);
+  background: tomato;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  /*margin-left: 140px;*/
 }

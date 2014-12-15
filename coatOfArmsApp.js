@@ -39,5 +39,5 @@ $("#vert").click(function() {
 //Ordinary dropdown menu controls
 $(".dropdown-menu li a").click(function(event){
   event.preventDefault();
-  $shield.html("<div id='bend-dexter'></div><div id='bend-sinister'></div>");
+  $shield.html("<div id='saltire1'></div><div id='saltire2'></div>");
 });
