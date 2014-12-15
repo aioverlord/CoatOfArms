@@ -128,12 +128,26 @@
 /* Parallelogram
 ================================ */
 
-#parallelogram {
+#bend-dexter {
   width: 150px;
-  height: 100px;
-  -webkit-transform: skewX(20deg);
-  -moz-transform: skewX(20deg);
-  -o-transform: skewX(20deg);
-  transform: skewX(20deg);
+  height: 500px;
+  -webkit-transform: skewX(40deg);
+  -moz-transform: skewX(40deg);
+  -o-transform: skewX(40deg);
+  transform: skewX(40deg);
+  background: blue;
+
+  margin-left: 200px;
+}
+
+#bend-sinister {
+  width: 150px;
+  height: 500px;
+  -webkit-transform: skewX(-40deg);
+  -moz-transform: skewX(-40deg);
+  -o-transform: skewX(-40deg);
+  transform: skewX(-40deg);
   background: red;
+
+  margin-left: 140px;
 }
