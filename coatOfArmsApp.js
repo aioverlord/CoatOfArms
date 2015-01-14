@@ -24,9 +24,12 @@ $("#ordinaryType").next(".dropdown-menu").find("li a").click(function(event) {
   event.preventDefault();
   var value = $(event.target).attr("data-value")
   switch(value) {
-    case "cross":
-        //code block
+    case "chevron":
+        $shield.html("<div id='chevron1' class='defaultColor'></div><div id='chevron2' class='defaultColor'></div>");
         break;
+    case "cross":
+    //code block
+    break;
     case "saltire":
         $shield.html("<div id='saltire1' class='defaultColor'></div><div id='saltire2' class='defaultColor'></div>");
         break;
