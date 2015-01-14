@@ -10,35 +10,6 @@ function removeColor(jQueryObj) {
   return jQueryObj;
 }
 
-$("#or").click(function() {
-  removeColor($shield).addClass("orColor");
-});
-
-$("#argent").click(function() {
-  removeColor($shield).addClass("argentColor");
-});
-
-$("#azure").click(function() {
-  removeColor($shield).addClass("azureColor");
-});
-
-$("#gules").click(function() {
-  removeColor($shield).addClass("gulesColor");
-});
-
-$("#purpure").click(function() {
-  removeColor($shield).addClass("purpureColor");
-});
-
-$("#sable").click(function() {
-  removeColor($shield).addClass("sableColor");
-});
-
-$("#vert").click(function() {
-  removeColor($shield).addClass("vertColor");
-});
-
-
 
 // Click controls for Field Color
 $("#fieldColor").next(".dropdown-menu").find("li a").click(function(event) {
