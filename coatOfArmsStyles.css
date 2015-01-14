@@ -137,7 +137,6 @@
   -moz-transform: skewX(40deg);
   -o-transform: skewX(40deg);
   transform: skewX(40deg);
-  background: blue;
 
   position: absolute;
   top: 0;
