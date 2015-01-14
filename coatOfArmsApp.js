@@ -25,16 +25,16 @@ $("#ordinaryType").next(".dropdown-menu").find("li a").click(function(event) {
   var value = $(event.target).attr("data-value")
   switch(value) {
     case "chevron":
-        $shield.html("<div id='chevron1' class='defaultColor'></div><div id='chevron2' class='defaultColor'></div>");
-        break;
+      $shield.html("<div id='chevron1' class='defaultColor'></div><div id='chevron2' class='defaultColor'></div>");
+      break;
     case "cross":
-    //code block
-    break;
+      $shield.html("<div id='cross1' class='defaultColor'></div><div id='cross2' class='defaultColor'></div>");
+      break;
     case "saltire":
-        $shield.html("<div id='saltire1' class='defaultColor'></div><div id='saltire2' class='defaultColor'></div>");
-        break;
+      $shield.html("<div id='saltire1' class='defaultColor'></div><div id='saltire2' class='defaultColor'></div>");
+      break;
     default:
-        $shield.html("<div id=" + value + " class='defaultColor'></div>");
+      $shield.html("<div id=" + value + " class='defaultColor'></div>");
   } 
 });
 

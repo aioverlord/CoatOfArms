@@ -79,7 +79,8 @@
 ================================ */
 
 /*diagonal line: topleft to bottomright*/
-#bend-dexter {
+/*diagonal criscross part 1*/
+#bend-dexter, #saltire1 {
   width: 50px;
   height: 100px;
   -webkit-transform: skewX(40deg);
@@ -95,39 +96,8 @@
 }
 
 /*diagonal line: topright to bottomleft*/
-#bend-sinister {
-  width: 50px;
-  height: 100px;
-  -webkit-transform: skewX(-40deg);
-  -moz-transform: skewX(-40deg);
-  -o-transform: skewX(-40deg);
-  transform: skewX(-40deg);
-
-  position: absolute;
-  top: 0;
-  left: 0;
-
-  /*margin-left: 140px;*/
-}
-
-/*diagonal criscross part 1*/
-#saltire1 {
-  width: 50px;
-  height: 100px;
-  -webkit-transform: skewX(40deg);
-  -moz-transform: skewX(40deg);
-  -o-transform: skewX(40deg);
-  transform: skewX(40deg);
-
-  position: absolute;
-  top: 0;
-  left: 0;
-
-  /*margin-left: 200px;*/
-}
-
 /*diagonal criscross part 2*/
-#saltire2 {
+#bend-sinister, #saltire2 {
   width: 50px;
   height: 100px;
   -webkit-transform: skewX(-40deg);
@@ -146,7 +116,8 @@
 ================================ */
 
 /*vertical line*/
-#pale {
+/*plus sign part 1*/
+#pale, #cross1 {
   width: 50px;
   height: 100px;
 
@@ -156,16 +127,12 @@
 }
 
 /*horizontal line*/
-#fess {
+/*plus sign part 1*/
+#fess, #cross2 {
   width: 100px;
   height: 50px;
 
   position: absolute;
   top: 200px;
   left: 0;
-}
-
-/*plus sign*/
-#cross {
-
 }
