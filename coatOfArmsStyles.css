@@ -132,7 +132,6 @@
   -moz-transform: skewX(40deg);
   -o-transform: skewX(40deg);
   transform: skewX(40deg);
-  background: aqua;
 
   position: absolute;
   top: 0;
@@ -149,7 +148,6 @@
   -moz-transform: skewX(-40deg);
   -o-transform: skewX(-40deg);
   transform: skewX(-40deg);
-  background: tomato;
 
   position: absolute;
   top: 0;
