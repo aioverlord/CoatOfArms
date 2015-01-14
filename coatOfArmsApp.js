@@ -41,3 +41,14 @@ $(".dropdown-menu li a").click(function(event){
   event.preventDefault();
   $shield.html("<div id='fess'></div>");
 });
+
+$("#fieldColor").hover(function(event) {
+  console.log(event.target);
+  var $target = $(event.target);
+  if($target.is('option')) {
+    console.log($target.val());
+    //removeColor($shield).addClass($target.val());
+    removeColor($shield).addClass("orColor");
+  }
+
+});
