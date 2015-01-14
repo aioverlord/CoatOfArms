@@ -51,7 +51,7 @@
 
 #chevron1 {
   position: absolute;
-  top: 0;
+  top: 35%;
   left: 0;
   height: 25%;
   width: 50%;
@@ -63,7 +63,7 @@
 }
 #chevron2 {
   position: absolute;
-  top: 0;
+  top: 35%;
   right: 0;
   height: 25%;
   width: 50%;
@@ -82,7 +82,7 @@
 /*diagonal criscross part 1*/
 #bend-dexter, #saltire1 {
   width: 15%;
-  height: 75%;
+  height: 100%;
   -webkit-transform: skewX(40deg);
   -moz-transform: skewX(40deg);
   -o-transform: skewX(40deg);
@@ -90,16 +90,14 @@
 
   position: absolute;
   top: 0;
-  left: 0;
-
-  /*margin-left: 200px;*/
+  left: 42%;
 }
 
 /*diagonal line: topright to bottomleft*/
 /*diagonal criscross part 2*/
 #bend-sinister, #saltire2 {
   width: 15%;
-  height: 75%;
+  height: 100%;
   -webkit-transform: skewX(-40deg);
   -moz-transform: skewX(-40deg);
   -o-transform: skewX(-40deg);
@@ -107,9 +105,7 @@
 
   position: absolute;
   top: 0;
-  left: 0;
-
-  /*margin-left: 140px;*/
+  left: 42%;
 }
 
 /* Straight-based Ordinaries
@@ -133,7 +129,7 @@
 
   position: absolute;
   top: 0;
-  left: 200px;
+  left: 42.5%;
 }
 
 /*horizontal line*/
@@ -143,7 +139,7 @@
   height: 15%;
 
   position: absolute;
-  top: 200px;
+  top: 35%;
   left: 0;
 }
 
