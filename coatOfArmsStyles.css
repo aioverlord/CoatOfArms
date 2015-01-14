@@ -9,43 +9,6 @@
   position: relative;
 }
 
-.btn-metal {
-
-}
-
-.btn-colour {
-  color: #FFF;
-  text-shadow: 0 -1px 0 rgba(0,0,0,.2);
-}
-
-#or {
-  background-image: linear-gradient(to bottom, #FFFF99 0, #FFFF22 100%);
-}
-
-#argent {
-  background-image: linear-gradient(to bottom, #C0C0C0  0, #FFFFFF 100%);
-}
-
-#azure {
-  background-image: linear-gradient(to bottom, #33CCFF 0, #0033CC 100%);
-}
-
-#gules {
-  background-image: linear-gradient(to bottom, #FF5050 0, #FF0000 100%);
-}
-
-#purpure {
-  background-image: linear-gradient(to bottom, #FF66CC 0, #CC3399 100%);
-}
-
-#sable {
-  background-image: linear-gradient(to bottom, #C0C0C0 0, #000000 100%);
-}
-
-#vert {
-  background-image: linear-gradient(to bottom, #66FF33 0, #009900 100%);
-}
-
 /* Tincture Colors
 ================================ */
 
