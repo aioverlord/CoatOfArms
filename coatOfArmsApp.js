@@ -1,10 +1,10 @@
 //Cache the shield selector
 var $shield = $("#shield"),
+//Cache colors for hover function
     pastFieldColor = "",
     pastOrdinaryColor = "";
 
-//Button color controls
-
+//Custom function to remove color classes
 function removeColor(jQueryObj) {
   jQueryObj.removeClass("defaultColor").removeClass("orColor").removeClass("argentColor").removeClass("azureColor").removeClass("gulesColor").removeClass("purpureColor").removeClass("sableColor").removeClass("vertColor");
   return jQueryObj;
@@ -15,8 +15,6 @@ function removeColor(jQueryObj) {
 $("#fieldColor").next(".dropdown-menu").find("li a").click(function(event) {
   event.preventDefault();
   removeColor($shield).addClass($(event.target).attr("data-value"));
-  //   //removeColor($shield).addClass($target.val());
-  //   removeColor($shield).addClass("orColor");
 });
 
 // Click controls for Ordinary Type
@@ -25,16 +23,12 @@ $("#ordinaryType").next(".dropdown-menu").find("li a").click(function(event) {
   var value = $(event.target).attr("data-value")
   switch(value) {
     case "chevron":
-      $shield.html("<div id='chevron1' class='defaultColor'></div><div id='chevron2' class='defaultColor'></div>");
-      break;
     case "cross":
-      $shield.html("<div id='cross1' class='defaultColor'></div><div id='cross2' class='defaultColor'></div>");
-      break;
     case "saltire":
-      $shield.html("<div id='saltire1' class='defaultColor'></div><div id='saltire2' class='defaultColor'></div>");
+      $shield.html("<div id='" + value + "1' class='defaultColor'></div><div id='" + value + "2' class='defaultColor'></div>");
       break;
     default:
-      $shield.html("<div id=" + value + " class='defaultColor'></div>");
+      $shield.html("<div id='" + value + "' class='defaultColor'></div>");
   } 
 });
 
@@ -43,8 +37,6 @@ $("#ordinaryColor").next(".dropdown-menu").find("li a").click(function(event) {
   event.preventDefault();
   $ordinary = $shield.children("div");
   removeColor($ordinary).addClass($(event.target).attr("data-value"));
-  //   //removeColor($shield).addClass($target.val());
-  //   removeColor($shield).addClass("orColor");
 });
 
 
