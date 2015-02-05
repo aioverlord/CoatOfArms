@@ -3,8 +3,25 @@
 #shield {
 	height: 500px;
 	max-width: 500px;
-  border: 3px #000 solid;
-  margin: 10px 0;
+  border-radius: 0 0 50% 50%;
+  position: relative;
+  z-index: -1;
+}
+
+#shieldEdge {
+  background-color: transparent;
+  border: 10px black solid;
+  border-radius: 0 0 50% 50%;
+  position: relative;
+}
+
+#shieldNegativeSpace{
+  max-width: 750px;
+  background-color: transparent;
+  border-top: 50px white solid;
+  border-bottom: 20px white solid;
+  border-left: 115px white solid;
+  border-right: 115px white solid;
   border-radius: 0 0 50% 50%;
   position: relative;
 }
@@ -82,30 +99,30 @@
 /*diagonal criscross part 1*/
 #bend-dexter, #saltire1 {
   width: 15%;
-  height: 100%;
-  -webkit-transform: skewX(40deg);
-  -moz-transform: skewX(40deg);
-  -o-transform: skewX(40deg);
-  transform: skewX(40deg);
+  height: 95%;
+  -webkit-transform: skewX(50deg);
+  -moz-transform: skewX(50deg);
+  -o-transform: skewX(50deg);
+  transform: skewX(50deg);
 
   position: absolute;
-  top: 0;
-  left: 42%;
+  top: -10%;
+  left: 35%;
 }
 
 /*diagonal line: topright to bottomleft*/
 /*diagonal criscross part 2*/
 #bend-sinister, #saltire2 {
   width: 15%;
-  height: 100%;
-  -webkit-transform: skewX(-40deg);
-  -moz-transform: skewX(-40deg);
-  -o-transform: skewX(-40deg);
-  transform: skewX(-40deg);
+  height: 95%;
+  -webkit-transform: skewX(-50deg);
+  -moz-transform: skewX(-50deg);
+  -o-transform: skewX(-50deg);
+  transform: skewX(-50deg);
 
   position: absolute;
-  top: 0;
-  left: 43.5%;
+  top: -10%;
+  left: 50%;
 }
 
 /* Straight-based Ordinaries
