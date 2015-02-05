@@ -1,5 +1,7 @@
+jQuery.noConflict();
+console.log(jQuery);
 //Cache the shield selector
-var $shield = $("#shield"),
+var jQueryshield = jQuery("#shield"),
 //Cache colors for hover function
     pastFieldColor = "",
     pastOrdinaryColor = "";
@@ -12,41 +14,39 @@ function removeColor(jQueryObj) {
 
 
 // Click controls for Field Color
-$("#fieldColor").next(".dropdown-menu").find("li a").click(function(event) {
+jQuery("#fieldColor").next(".dropdown-menu").find("li a").click(function(event) {
   event.preventDefault();
-  removeColor($shield).addClass($(event.target).attr("data-value"));
+  removeColor(jQueryshield).addClass(jQuery(event.target).attr("data-value"));
 });
 
 // Click controls for Ordinary Type
-$("#ordinaryType").next(".dropdown-menu").find("li a").click(function(event) {
+jQuery("#ordinaryType").next(".dropdown-menu").find("li a").click(function(event) {
   event.preventDefault();
-  var value = $(event.target).attr("data-value")
+  var value = jQuery(event.target).attr("data-value")
   switch(value) {
     case "chevron":
     case "cross":
     case "saltire":
-      $shield.html("<div id='" + value + "1' class='defaultColor'></div><div id='" + value + "2' class='defaultColor'></div>");
+      jQueryshield.html("<div id='" + value + "1' class='defaultColor'></div><div id='" + value + "2' class='defaultColor'></div>");
       break;
     default:
-      $shield.html("<div id='" + value + "' class='defaultColor'></div>");
+      jQueryshield.html("<div id='" + value + "' class='defaultColor'></div>");
   } 
 });
 
 // Click controls for Ordinary Color
-$("#ordinaryColor").next(".dropdown-menu").find("li a").click(function(event) {
+jQuery("#ordinaryColor").next(".dropdown-menu").find("li a").click(function(event) {
   event.preventDefault();
-  $ordinary = $shield.children("div");
-  removeColor($ordinary).addClass($(event.target).attr("data-value"));
+  jQueryordinary = jQueryshield.children("div");
+  removeColor(jQueryordinary).addClass(jQuery(event.target).attr("data-value"));
 });
 
 
 
 // Hover controls for Field Color
-$("#fieldColor").next(".dropdown-menu").find("li a").hover(function(event) {
-  var $target = $(event.target);
-  console.log($target.attr("data-value"));
+jQuery("#fieldColor").next(".dropdown-menu").find("li a").hover(function(event) {
+  var jQuerytarget = jQuery(event.target);
+  console.log(jQuerytarget.attr("data-value"));
   //   //removeColor($shield).addClass($target.val());
   //   removeColor($shield).addClass("orColor");
 });
-
-
