@@ -68,6 +68,14 @@
           <span>Field Color:</span>
           <button ng-repeat="color in shield.COLORS" ng-click="shield.fieldColor = color.data">{{color.description}}</button>
         </div>
+        <div>
+          <span>Ordinary Type:</span>
+          <button ng-repeat="ordinary in shield.ORDINARIES" ng-click="shield.ordinary.type = ordinary.data">{{ordinary.description}}</button>
+        </div>
+        <div>
+          <span>Ordinary Color:</span>
+          <button ng-repeat="color in shield.COLORS" ng-click="shield.ordinary.color = color.data">{{color.description}}</button>
+        </div>
 
         <div id="shieldNegativeSpace">
           <div id="shieldEdge">

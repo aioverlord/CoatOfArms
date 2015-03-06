@@ -4,8 +4,8 @@
   app.controller("shieldController", function(){
     this.fieldColor = "defaultColor";
     this.ordinary =  {
-      ordinaryType: "default",
-      ordinaryColor: "defaultColor"
+      type: "default",
+      color: "defaultColor"
     };
 
     this.COLORS = [
