@@ -21,6 +21,8 @@
       <h2>Controls</h2>
       
       <div ng-app="main">
+        <div ng-controller="shieldController as shield">
+
         <ul class="nav nav-tabs">
             <li role="presentation" class="dropdown">
               <button id="fieldColor" class="btn btn-default dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Field Color <span class="caret"></span></button>
@@ -64,12 +66,14 @@
 
         <div id="shieldNegativeSpace">
           <div id="shieldEdge">
-            <div id="shield" class="defaultColor">
+            <div id="shield" ng-class="shield.fieldColor">
             </div>
           </div>
         </div>
 
-      </div>
+        </div>
+        
+      </div> <!-- end main module-->
 
     </div>
 
