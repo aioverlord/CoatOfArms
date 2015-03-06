@@ -64,6 +64,10 @@
             </li>
         </ul>
 
+        <div ng-repeat="color in shield.COLORS">
+          <button ng-click="shield.fieldColor = color">{{color}}</button>
+        </div>
+
         <div id="shieldNegativeSpace">
           <div id="shieldEdge">
             <div id="shield" ng-class="shield.fieldColor">
