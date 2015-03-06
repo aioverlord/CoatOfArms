@@ -8,7 +8,16 @@
       ordinaryColor: "defaultColor"
     };
 
-    this.COLORS = ["orColor", "argentColor", "azureColor", "gulesColor", "purpureColor", "sableColor", "vertColor"];
+    this.COLORS = [
+      {data: "orColor", description: "Or - Gold "},
+      {data: "argentColor", description: "Argent - Silver "},
+      {data: "azureColor", description: "Azure - Blue "},
+      {data: "gulesColor", description: "Gules - Red "},
+      {data: "purpureColor", description: "Purpure - Purple "},
+      {data: "sableColor", description: "Sable - Black "},
+      {data: "vertColor", description: "Vert - Green "}
+    ];
+
   });
 
   
