@@ -23,58 +23,31 @@
       <div ng-app="main">
         <div ng-controller="shieldController as shield">
 
-        <ul class="nav nav-tabs">
-            <li role="presentation" class="dropdown">
-              <button id="fieldColor" class="btn btn-default dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Field Color <span class="caret"></span></button>
-              <ul class="dropdown-menu" role="menu" aria-labelledby="fieldColor">
-                <li role="presentation"><a role="menuitem" href="#" data-value="orColor">Or - Gold <div class="preview orColor" data-value="orColor"></div></a></li>
-                <li role="presentation"><a role="menuitem" href="#" data-value="argentColor">Argent - Silver <div class="preview argentColor" data-value="argentColor"></div></a></li>
-                <li role="presentation"><a role="menuitem" href="#" data-value="azureColor">Azure - Blue <div class="preview azureColor" data-value="azureColor"></div></a></li>
-                <li role="presentation"><a role="menuitem" href="#" data-value="gulesColor">Gules - Red <div class="preview gulesColor" data-value="gulesColor"></div></a></li>
-                <li role="presentation"><a role="menuitem" href="#" data-value="purpureColor">Purpure - Purple <div class="preview purpureColor" data-value="purpureColor"></div></a></li>
-                <li role="presentation"><a role="menuitem" href="#" data-value="sableColor">Sable - Black <div class="preview sableColor" data-value="sableColor"></div></a></li>
-                <li role="presentation"><a role="menuitem" href="#" data-value="vertColor">Vert - Green <div class="preview vertColor" data-value="vertColor"></div></a></li>
-              </ul>
-            </li>
-
-            <li role="presentation" class="dropdown">
-              <button id="ordinaryType" class="btn btn-default dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Ordinary Type <span class="caret"></span></button>
-              <ul class="dropdown-menu" role="menu" aria-labelledby="ordinaryType">
-                <li role="presentation"><a role="menuitem" href="#" data-value="cross">Cross <div class="preview defaultColor" data-value="cross"><div id="cross1" class="sableColor" data-value="cross"></div><div id="cross2" class="sableColor" data-value="cross"></div></div></a></li>
-                <li role="presentation"><a role="menuitem" href="#" data-value="pale">Pale <div class="preview defaultColor" data-value="pale"><div id="pale" class="sableColor" data-value="pale"></div></div></a></li>
-                <li role="presentation"><a role="menuitem" href="#" data-value="fess">Fess <div class="preview defaultColor" data-value="fess"><div id="fess" class="sableColor" data-value="fess"></div></div></a></li>
-                <li role="presentation"><a role="menuitem" href="#" data-value="bend-dexter">Bend <div class="preview defaultColor" data-value="bend-dexter"><div id="bend-dexter" class="sableColor" data-value="bend-dexter"></div></div></a></li>
-                <li role="presentation"><a role="menuitem" href="#" data-value="chevron">Chevron <div class="preview defaultColor" data-value="chevron"><div id="chevron1" class="sableColor" data-value="chevron"></div><div id="chevron2" class="sableColor" data-value="chevron"></div></div></a></li>
-                <li role="presentation"><a role="menuitem" href="#" data-value="saltire">Saltire <div class="preview defaultColor" data-value="saltire"><div id="saltire1" class="sableColor" data-value="saltire"></div><div id="saltire2" class="sableColor" data-value="saltire"></div></div></a></li>
-                <li role="presentation"><a role="menuitem" href="#" data-value="chief">Chief <div class="preview defaultColor" data-value="chief"><div id="chief" class="sableColor" data-value="chief"></div></div></a></li>
-              </ul>
-            </li>
-
-            <li role="presentation" class="dropdown">
-              <button id="ordinaryColor" class="btn btn-default dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Ordinary Color <span class="caret"></span></button>
-              <ul class="dropdown-menu" role="menu" aria-labelledby="ordinaryColor">
-                <li role="presentation"><a role="menuitem" href="#" data-value="orColor">Or - Gold <div class="preview orColor" data-value="orColor"></div></a></li>
-                <li role="presentation"><a role="menuitem" href="#" data-value="argentColor">Argent - Silver <div class="preview argentColor" data-value="argentColor"></div></a></li>
-                <li role="presentation"><a role="menuitem" href="#" data-value="azureColor">Azure - Blue <div class="preview azureColor" data-value="azureColor"></div></a></li>
-                <li role="presentation"><a role="menuitem" href="#" data-value="gulesColor">Gules - Red <div class="preview gulesColor" data-value="gulesColor"></div></a></li>
-                <li role="presentation"><a role="menuitem" href="#" data-value="purpureColor">Purpure - Purple <div class="preview purpureColor" data-value="purpureColor"></div></a></li>
-                <li role="presentation"><a role="menuitem" href="#" data-value="sableColor">Sable - Black <div class="preview sableColor" data-value="sableColor"></div></a></li>
-                <li role="presentation"><a role="menuitem" href="#" data-value="vertColor">Vert - Green <div class="preview vertColor" data-value="vertColor"></div></a></li>
-              </ul>
-            </li>
-        </ul>
-
-        <div>
-          <span>Field Color:</span>
-          <button ng-repeat="color in shield.COLORS" ng-click="shield.fieldColor = color.data">{{color.description}}</button>
+        <div role="presentation" class="btn-group">
+          <button id="fieldColor" class="btn btn-default dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+            Field Color <span class="caret"></span>
+          </button>
+          <ul class="dropdown-menu" role="menu" aria-labelledby="fieldColor">
+            <li role="menuitem" ng-repeat="color in shield.COLORS" ng-click="shield.fieldColor = color.data"><a>{{color.description}}</a></li>
+          </ul>
         </div>
-        <div>
-          <span>Ordinary Type:</span>
-          <button ng-repeat="ordinary in shield.ORDINARIES" ng-click="shield.ordinary.type = ordinary.data">{{ordinary.description}}</button>
+
+        <div role="presentation" class="btn-group">
+          <button id="ordinaryType" class="btn btn-default dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+            Ordinary Type <span class="caret"></span>
+          </button>
+          <ul class="dropdown-menu" role="menu" aria-labelledby="ordinaryType">
+            <li ng-repeat="ordinary in shield.ORDINARIES" ng-click="shield.ordinary.type = ordinary.data"><a>{{ordinary.description}}</a></li>
+          </ul>
         </div>
-        <div>
-          <span>Ordinary Color:</span>
-          <button ng-repeat="color in shield.COLORS" ng-click="shield.ordinary.color = color.data">{{color.description}}</button>
+
+        <div role="presentation" class="btn-group">
+          <button id="ordinaryColor" class="btn btn-default dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+            Ordinary Color <span class="caret"></span>
+          </button>
+          <ul class="dropdown-menu" role="menu" aria-labelledby="ordinaryColor">
+            <li ng-repeat="color in shield.COLORS" ng-click="shield.ordinary.color = color.data"><a>{{color.description}}</a></li>
+          </ul>
         </div>
 
         <div id="shieldNegativeSpace">
@@ -86,8 +59,7 @@
           </div>
         </div>
 
-        </div>
-        
+        </div> <!-- end shieldController--> 
       </div> <!-- end main module-->
 
     </div>
