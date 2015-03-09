@@ -112,7 +112,7 @@
 
 /*diagonal line: topright to bottomleft*/
 /*diagonal criscross part 2*/
-.bend2, .saltire2 {
+.saltire2 {
   width: 15%;
   height: 95%;
   -webkit-transform: skewX(-50deg);
