@@ -66,7 +66,7 @@
 /* Chevron
 ================================ */
 
-#chevron1 {
+.chevron1 {
   position: absolute;
   top: 35%;
   left: 0;
@@ -78,7 +78,7 @@
   -o-transform: skewY(25deg);
   transform: skewY(25deg);
 }
-#chevron2 {
+.chevron2 {
   position: absolute;
   top: 35%;
   right: 0;
@@ -97,7 +97,7 @@
 
 /*diagonal line: topleft to bottomright*/
 /*diagonal criscross part 1*/
-#bend-dexter, #saltire1 {
+.bend1, .saltire1 {
   width: 15%;
   height: 95%;
   -webkit-transform: skewX(50deg);
@@ -112,7 +112,7 @@
 
 /*diagonal line: topright to bottomleft*/
 /*diagonal criscross part 2*/
-#bend-sinister, #saltire2 {
+.bend2, .saltire2 {
   width: 15%;
   height: 95%;
   -webkit-transform: skewX(-50deg);
@@ -130,7 +130,7 @@
 
 /*vertical line*/
 /*plus sign part 1*/
-#pale, #cross1 {
+.pale1, .cross1 {
   width: 15%;
   height: 100%;
   /*border-radius: 0/0 0/0 5%/20% 20%/5%;
@@ -151,7 +151,7 @@
 
 /*horizontal line*/
 /*plus sign part 1*/
-#fess, #cross2 {
+.fess1, .cross2 {
   width: 100%;
   height: 15%;
 
@@ -161,7 +161,7 @@
 }
 
 /*horizontal section at the top*/
-#chief {
+.chief1 {
   width: 100%;
   height: 30%;
 

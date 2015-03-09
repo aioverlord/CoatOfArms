@@ -22,7 +22,7 @@
       {data: "cross", description: "Cross "},
       {data: "pale", description: "Pale "},
       {data: "fess", description: "Fess "},
-      {data: "bend-dexter", description: "Bend "},
+      {data: "bend", description: "Bend "},
       {data: "chevron", description: "Chevron "},
       {data: "saltire", description: "Saltire "},
       {data: "chief", description: "Chief "}
